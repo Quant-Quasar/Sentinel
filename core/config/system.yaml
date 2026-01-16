@@ -1,0 +1,2 @@
+# System-wide configuration limits
+max_shift_duration_hours: 24
