@@ -1,0 +1,48 @@
+# --- Security & Secrets (CRITICAL) ---
+.env
+.env.local
+*.pem
+*.key
+
+# --- Python & Environment ---
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+build/
+dist/
+*.egg-info/
+
+# --- Runtime Data (Persistence Layer) ---
+# We ignore the storage folder because it contains the live state
+# of the agents (ledgers, contexts) which changes every run.
+storage/
+
+# --- Client Data (Confidential) ---
+# Never commit the PDFs provided by the client
+client_data_room/*
+!client_data_room/.gitkeep
+
+# --- Generated Reports ---
+FINAL_REPORT.md
+*.pdf
+
+# --- IDE & OS Files ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- Logs ---
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- Testing ---
+.pytest_cache/
+.coverage
+htmlcov/

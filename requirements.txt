@@ -1,0 +1,27 @@
+# Core Data & Validation
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+
+# Utilities
+python-dotenv>=1.0.0
+uuid>=1.30
+
+# LLM Interface (Google Gemini)
+google-genai>=0.2.0
+
+# PDF Processing (Table Extraction)
+pypdf>=3.17.0
+pdfplumber>=0.10.3
+
+# Dashboard & Visualization
+streamlit>=1.31.0
+pandas>=2.2.0
+numpy>=1.26.0
+
+# API & Runtime (Future proofing)
+fastapi>=0.109.0
+uvicorn>=0.27.0
+
+# Testing
+pytest>=8.0.0
+pytest-asyncio>=0.23.0
